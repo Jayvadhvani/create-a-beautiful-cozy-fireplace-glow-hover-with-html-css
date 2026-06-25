@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang="en"><head>
+  
+  
+  <meta charset="UTF-8">
+  <title>Create a Beautiful Cozy Fireplace Glow Hover with HTML &amp; CSS</title>
+  <style>
+    body { background: #0f172a; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; font-family: sans-serif; }
+    
+    .fire-card {
+      width: 300px;
+      padding: 40px;
+      background: #1e293b;
+      border-radius: 12px;
+      text-align: center;
+      color: #94a3b8;
+      cursor: pointer;
+      position: relative;
+      transition: 0.5s ease;
+      /* default subtle static glow */
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    
+    h3 { color: #f8fafc; transition: color 0.5s; font-size: 1.5rem; margin-top: 0;}
+    
+    .fire-card:hover {
+      background: #2a161f;
+      /* The Fireplace Box Shadow Base */
+      box-shadow: 
+        0 0 20px rgba(234, 88, 12, 0.6),
+        0 0 60px rgba(220, 38, 38, 0.3),
+        inset 0 0 15px rgba(249, 115, 22, 0.2);
+      transform: translateY(-5px);
+      /* Flicker activates on hover */
+      animation: flicker 0.2s infinite alternate;
+    }
+    
+    .fire-card:hover h3 { color: #fed7aa; /* Warms up the text too! */ }
+    
+    @keyframes flicker {
+      0%   { box-shadow: 0 0 15px rgba(234, 88, 12, 0.5), 0 0 40px rgba(220, 38, 38, 0.2), inset 0 0 20px rgba(249, 115, 22, 0.1); }
+      50%  { box-shadow: 0 3px 25px rgba(234, 88, 12, 0.8), 0 -2px 70px rgba(220, 38, 38, 0.4), inset 0 0 10px rgba(249, 115, 22, 0.3); }
+      100% { box-shadow: 0 -2px 18px rgba(234, 88, 12, 0.6), 0 3px 55px rgba(220, 38, 38, 0.3), inset 0 0 15px rgba(249, 115, 22, 0.2); }
+    }
+  </style>
+
+            <meta name="description" content="A beautiful component imported via Developer Studio AI.">
+            <meta name="robots" content="index, follow">
+            <meta property="og:title" content="Create a Beautiful Cozy Fireplace Glow Hover with HTML &amp; CSS">
+            <meta property="og:description" content="A beautiful component imported via Developer Studio AI.">
+            <meta property="og:image" content="https://codescompiler.com/images/posts/css-fireplace-hover-card.png">
+            <meta name="twitter:card" content="summary_large_image">
+            <meta name="twitter:title" content="Create a Beautiful Cozy Fireplace Glow Hover with HTML &amp; CSS">
+            <meta name="twitter:description" content="A beautiful component imported via Developer Studio AI.">
+            <meta name="twitter:image" content="https://codescompiler.com/images/posts/css-fireplace-hover-card.png">
+          </head>
+<body>
+
+<!-- ── CODESCOMPILER DEMO HEADER ── -->
+<style>
+  #cc-demo-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    height: 48px;
+    background: #1a1b26;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    color: white;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
+  }
+  #cc-demo-header a { text-decoration: none; color: white; }
+  .cc-logo { font-size: 14px; font-weight: 900; }
+  .cc-logo span { color: #04aa6d; }
+  .cc-sep { width: 1px; height: 20px; background: rgba(255,255,255,0.12); margin: 0 12px; }
+  .cc-title { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.65); flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .cc-actions { display: flex; gap: 8px; }
+  .cc-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    color: rgba(255,255,255,0.7);
+  }
+  .cc-btn:hover { background: rgba(255,255,255,0.15); color: white; }
+  .cc-btn svg { width: 14px; height: 14px; }
+  @media (max-width: 600px) {
+    .cc-title { display: none; }
+    .cc-btn span { display: none; }
+  }
+</style>
+<header id="cc-demo-header">
+  <div style="display: flex; align-items: center; overflow: hidden;">
+    <a href="https://codescompiler.com" class="cc-logo" target="_blank" rel="dofollow"><span>Codes</span>Compiler</a>
+    <div class="cc-sep"></div>
+    <h1 class="cc-title" title="Create a Beautiful Cozy Fireplace Glow Hover with HTML & CSS" style="margin: 0; font-size: 13px; font-weight: 600;">📺 Create a Beautiful Cozy Fireplace Glow Hover with HTML & CSS</h1>
+  </div>
+  <div class="cc-actions">
+    <a href="https://codescompiler.com/blog/css-fireplace-hover-card" class="cc-btn" target="_blank" rel="dofollow" title="Read the full post">
+      <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7"></path></svg>
+      <span>Back to Post</span>
+    </a>
+    <a href="index.html" class="cc-btn" target="_blank" download="css-fireplace-hover-card.html" title="Download source file">
+      <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+      <span>Download</span>
+    </a>
+    <button onclick="document.getElementById('cc-demo-header').style.display='none'" class="cc-btn" title="Hide header for fullscreen view">
+      <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l5-5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"></path></svg>
+      <span>Fullscreen</span>
+    </button>
+  </div>
+</header>
+<!-- ================================== -->
+
+  <div class="fire-card">
+    <h3>Cozy Winter Cabin</h3>
+    <p>A beautifully aesthetic fire glow generated purely using overlapping CSS box-shadow animations.</p>
+  </div>
+
+
+</body></html>
